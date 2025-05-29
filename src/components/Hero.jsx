@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-blue-50 py-20 text-center">
+    <section className="bg-blue-100 py-20 text-center">
       <h2 className="text-4xl font-bold text-blue-700">
         Deep Cleaning, Done Right
       </h2>
