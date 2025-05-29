@@ -1,0 +1,114 @@
+clearGo-services/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+          Header.jsx
+          Hero.jsx
+          Services.jsx
+          Footer.jsx
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+│   └── index.css
+├── tailwind.config.js
+├── package.json
+└── README.md
+
+
+
+### 🏠 Homepage Features
+
+* **Hero Section**: Catchy headline, brief description, call-to-action (e.g. “Book Now”)
+* **Service Highlights**: Quick overview of top services
+* **Why Choose Us**: Icons with reasons (e.g., eco-friendly, trained professionals)
+* **Customer Testimonials**
+* **Service Area Map** (optional)
+* **Contact CTA**: Button or form leading to contact page
+
+---
+
+### 🧽 Services Page
+
+* **List of Cleaning Services**:
+
+  * Home Deep Cleaning
+  * Office Deep Cleaning
+  * Kitchen/Bathroom Cleaning
+  * Move-in/Move-out Cleaning
+  * Carpet & Upholstery Cleaning
+* **Each service includes**:
+
+  * Description
+  * Price (fixed or "starting at")
+  * Estimated time
+  * Add-on options
+
+---
+
+### 📅 Booking Page
+
+* **Form with fields**:
+
+  * Name, Email, Phone
+  * Address
+  * Date and time picker
+  * Type of service
+  * Notes/instructions
+* **Optional**: Google Maps API integration for address autocomplete
+* **Payment Integration** (Stripe or Razorpay for paid bookings)
+
+---
+
+### 💬 Contact Page
+
+* **Contact form** (with EmailJS/Formspree)
+* **Company phone number**
+* **Email address**
+* **Business hours**
+* **Google Maps location**
+
+---
+
+### ⭐ Testimonials Page
+
+* **Customer reviews**
+* **Ratings**
+* **Before/After Photos** (optional)
+
+---
+
+### 🙋 About Us Page
+
+* **Company history**
+* **Mission & values**
+* **Team introduction** (optional)
+* **Certifications or affiliations**
+
+---
+
+### 📝 Blog or Tips Page (optional)
+
+* Cleaning tips
+* Seasonal checklists
+* Eco-friendly practices
+
+---
+
+### ⚙️ Admin Panel (Optional, Advanced)
+
+* View bookings
+* Manage services/prices
+* Respond to messages
+* Customer management
+
+---
+
+### 🌐 Other Features
+
+* **Responsive Design** (works on mobile/tablet)
+* **SEO Optimization** (meta tags, titles)
+* **Live Chat** (e.g., Tawk.to or Crisp)
+* **Newsletter Signup** (optional)
+
+ 
