@@ -12,8 +12,8 @@ const About = () => {
             className="group relative block"
           >
             <img
-              src="https://m24fms.in/wp-content/uploads/2024/05/thumbnail_0005_Banner.jpg"
-              alt="Tour Video"
+              src="https://extension.usu.edu/images/cleaning.png"
+              alt="Deep Cleaning Video"
               className="rounded-2xl shadow-lg"
             />
             <span className="absolute inset-0 flex items-center justify-center">
@@ -33,42 +33,41 @@ const About = () => {
         {/* Text Section */}
         <div className="w-full lg:w-1/2">
           <h2 className="text-3xl font-semibold mb-4">
-            Take a look at Tour Video
+            See Our Deep Cleaning Service in Action
           </h2>
           <p className="text-gray-600 mb-4">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean.
+            Experience spotless homes and offices with our expert deep cleaning
+            service. We use eco-friendly products, advanced equipment, and trained
+            professionals to make every corner shine.
           </p>
           <p className="text-gray-600 mb-6">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia. It is a paradisematic country, in which
-            roasted parts of sentences fly into your mouth.
+            From kitchens to bathrooms, carpets to windows, we cover it all —
+            leaving your space hygienic, fresh, and inviting.
           </p>
 
           <ul className="grid grid-cols-2 gap-2 text-gray-700 mb-6 list-disc list-inside">
-            <li>Outdoor recreation activities</li>
-            <li>Airlines</li>
-            <li>Car Rentals</li>
-            <li>Cruise Lines</li>
-            <li>Hotels</li>
-            <li>Railways</li>
-            <li>Travel Insurance</li>
-            <li>Package Tours</li>
-            <li>Insurance</li>
-            <li>Guide Books</li>
+            <li>Residential Cleaning</li>
+            <li>Office & Commercial Spaces</li>
+            <li>Carpet & Upholstery</li>
+            <li>Window & Glass Cleaning</li>
+            <li>Move-In / Move-Out Cleaning</li>
+            <li>Post-Construction Cleanup</li>
+            <li>Eco-Friendly Products</li>
+            <li>Trained & Certified Staff</li>
+            <li>Flexible Scheduling</li>
+            <li>Affordable Packages</li>
           </ul>
 
           <a
             href="#"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
-            Get Started
+            Book a Cleaning
           </a>
         </div>
       </div>
     </section>
+
   );
 };
 
