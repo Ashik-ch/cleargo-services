@@ -37,29 +37,75 @@ const Services = () => {
             language ocean.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="border rounded-lg overflow-hidden  hover:shadow-lg transition bg-gray-200"
-            >
-              <div
-                className="h-48 bg-gray-200 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url('${
-                    service.url || "https://via.placeholder.com/400x300"
-                  }')`,
-                }}
-              ></div>
-              <div className="p-4 text-left">
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.desc}</p>
-              </div>
+        <div className="flex gap-5">
+          <div className="md:col-6 rounded-full h-96 ">
+            <img className="rounded-lg h-96 " src="https://img-cdn.publive.online/fit-in/1200x675/local-samosal/media/media_files/OuTGQtFoAbp2DCD9sfPe.png" alt="" />
+          </div>
+          <div className="md:col-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="border rounded-lg overflow-hidden  hover:shadow-lg transition bg-gray-200"
+                >
+                  <div
+                    className="h-48 bg-gray-200 bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url('${service.url || "https://via.placeholder.com/400x300"
+                        }')`,
+                    }}
+                  ></div>
+                  <div className="p-4 text-left">
+                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                    <p className="text-gray-600">{service.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
-    </section>
+
+
+      <div className="untree_co-section count-numbers py-5 mt-10">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
+              <div className="counter-wrap text-center">
+                <div className="counter text-5xl font-bold text-blue-600 mb-2">
+                  <span data-number="9313">0</span>
+                </div>
+                <span className="caption text-gray-700 text-lg">No. of Travels</span>
+              </div>
+            </div>
+            <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
+              <div className="counter-wrap text-center">
+                <div className="counter text-5xl font-bold text-blue-600 mb-2">
+                  <span data-number="8492">0</span>
+                </div>
+                <span className="caption text-gray-700 text-lg">No. of Clients</span>
+              </div>
+            </div>
+            <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
+              <div className="counter-wrap text-center">
+                <div className="counter text-5xl font-bold text-blue-600 mb-2">
+                  <span data-number="100">0</span>
+                </div>
+                <span className="caption text-gray-700 text-lg">No. of Employees</span>
+              </div>
+            </div>
+            <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
+              <div className="counter-wrap text-center">
+                <div className="counter text-5xl font-bold text-blue-600 mb-2">
+                  <span data-number="120">0</span>
+                </div>
+                <span className="caption text-gray-700 text-lg">No. of Countries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section >
   );
 };
 
