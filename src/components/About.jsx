@@ -45,17 +45,47 @@ const About = () => {
             leaving your space hygienic, fresh, and inviting.
           </p>
 
-          <ul className="grid grid-cols-2 gap-2 text-gray-700 mb-6 list-disc list-inside justify-items-start">
-            <li>Residential Cleaning</li>
-            <li>Office & Commercial Spaces</li>
-            <li>Carpet & Upholstery</li>
-            <li>Window & Glass Cleaning</li>
-            <li>Move-In / Move-Out Cleaning</li>
-            <li>Post-Construction Cleanup</li>
-            <li>Eco-Friendly Products</li>
-            <li>Trained & Certified Staff</li>
-            <li>Flexible Scheduling</li>
-            <li>Affordable Packages</li>
+          <ul className="grid grid-cols-2 gap-2 text-gray-700 mb-6 list-inside justify-items-start">
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Residential Cleaning
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Office & Commercial Spaces
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Carpet & Upholstery
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Window & Glass Cleaning
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Move-In / Move-Out Cleaning
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Post-Construction Cleanup
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Eco-Friendly Products
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Trained & Certified Staff
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Flexible Scheduling
+            </li>
+            <li className="flex items-start">
+              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+              Affordable Packages
+            </li>
           </ul>
 
           <a
