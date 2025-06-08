@@ -1,21 +1,17 @@
 .hero {
   padding: 7rem 0 10rem 0;
-  background: red;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Cleaning-Backgrounds-Desktop.jpg");
   margin-bottom: 100px;
 
   &.hero-inner {
     padding: 9rem 0 7rem 0;
     margin-bottom: auto;
-    background: red;
+    background: #3498db; /* Example primary color */
   }
 
   h1 {
-    color: white;
+    color: #ffffff;
     font-size: 60px;
-
-    @include media-breakpoint-down(md) {
-      font-size: 45px;
-    }
 
     .typed-words {
       position: relative;
@@ -30,6 +26,10 @@
         content: "";
       }
     }
+
+    @media (max-width: 768px) {
+      font-size: 45px;
+    }
   }
 
   .intro-wrap {
@@ -38,26 +38,26 @@
   }
 
   .slides {
-    background: white;
-    max-width: 800px;
+    background: #ffffff;
+    max-width: 500px;
     left: -100px;
     z-index: 0;
     position: relative;
     border-radius: 200px;
-    box-shadow: 0 25px 50px -10px rgba(green, 0.4);
+    box-shadow: 0 25px 50px -10px rgba(52, 152, 219, 0.4); /* Example primary rgba */
     height: 608px;
     margin-bottom: -200px;
 
-    @include media-breakpoint-down(md) {
+    @media (max-width: 768px) {
       left: 0;
     }
 
     img {
       position: absolute;
       border-radius: 200px;
-      opacity: 0;
+      opacity: 100;
       transition: 4s opacity ease;
-      background: white;
+      background: #ffffff;
 
       &.active {
         opacity: 1;
