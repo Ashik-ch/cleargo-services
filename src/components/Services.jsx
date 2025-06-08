@@ -26,19 +26,16 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 bg-white text-center">
+    <section id="services" className="py-16 bg-gray-50 text-center">
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-semibold mb-3">Our Services</h2>
+          <h1 className="mb-3">Our Services</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean.
+            We provide professional cleaning solutions to make your spaces shine. From deep cleaning, home and office cleaning, sofa and upholstery care, to water tank and interlock cleaning — ClearGo Services ensures every corner is spotless and hygienic. Serving Kozhikode and Northern Kerala with trusted quality.
           </p>
         </div>
         <div className="flex gap-5">
-          <div className="md:col-6 rounded-full h-96 ">
+          <div className="md:col-6 content-center">
             <img className="rounded-lg h-96 " src="https://img-cdn.publive.online/fit-in/1200x675/local-samosal/media/media_files/OuTGQtFoAbp2DCD9sfPe.png" alt="" />
           </div>
           <div className="md:col-6">
@@ -46,16 +43,16 @@ const Services = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="border rounded-lg overflow-hidden  hover:shadow-lg transition bg-gray-200"
+                  className=" flex border rounded-lg overflow-hidden  hover:shadow-lg transition bg-gray-200"
                 >
                   <div
-                    className="h-48 bg-gray-200 bg-cover bg-center"
+                    className="h-48 bg-gray-200 bg-cover bg-center w-1/2 rounded-lg m-4"
                     style={{
                       backgroundImage: `url('${service.url || "https://via.placeholder.com/400x300"
                         }')`,
                     }}
                   ></div>
-                  <div className="p-4 text-left">
+                  <div className="p-2 text-left">
                     <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                     <p className="text-gray-600">{service.desc}</p>
                   </div>
@@ -67,13 +64,13 @@ const Services = () => {
       </div>
 
 
-      <div className="untree_co-section count-numbers py-5 mt-10">
+      <div className="untree_co-section count-numbers py-5 mt-10 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap mx-4">
             <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
               <div className="counter-wrap text-center">
                 <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <span data-number="9313">0</span>
+                  <h1 data-number="9313">0</h1>
                 </div>
                 <span className="caption text-gray-700 text-lg">No. of Travels</span>
               </div>
@@ -81,7 +78,7 @@ const Services = () => {
             <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
               <div className="counter-wrap text-center">
                 <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <span data-number="8492">0</span>
+                  <h1 data-number="8492">0</h1>
                 </div>
                 <span className="caption text-gray-700 text-lg">No. of Clients</span>
               </div>
@@ -89,7 +86,7 @@ const Services = () => {
             <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
               <div className="counter-wrap text-center">
                 <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <span data-number="100">0</span>
+                  <h1 data-number="100">0</h1>
                 </div>
                 <span className="caption text-gray-700 text-lg">No. of Employees</span>
               </div>
@@ -97,7 +94,7 @@ const Services = () => {
             <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 mb-6">
               <div className="counter-wrap text-center">
                 <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <span data-number="120">0</span>
+                  <h1 data-number="120">0</h1>
                 </div>
                 <span className="caption text-gray-700 text-lg">No. of Countries</span>
               </div>
