@@ -45,7 +45,7 @@ const About = () => {
             leaving your space hygienic, fresh, and inviting.
           </p>
 
-          <ul className="grid grid-cols-2 gap-2 text-gray-700 mb-6 list-disc list-inside">
+          <ul className="grid grid-cols-2 gap-2 text-gray-700 mb-6 list-disc list-inside justify-items-start">
             <li>Residential Cleaning</li>
             <li>Office & Commercial Spaces</li>
             <li>Carpet & Upholstery</li>

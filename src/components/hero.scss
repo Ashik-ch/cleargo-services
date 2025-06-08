@@ -1,0 +1,68 @@
+.hero {
+  padding: 7rem 0 10rem 0;
+  background: red;
+  margin-bottom: 100px;
+
+  &.hero-inner {
+    padding: 9rem 0 7rem 0;
+    margin-bottom: auto;
+    background: red;
+  }
+
+  h1 {
+    color: white;
+    font-size: 60px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 45px;
+    }
+
+    .typed-words {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        height: 7px;
+        background-color: #b1d0e0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: "";
+      }
+    }
+  }
+
+  .intro-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  .slides {
+    background: white;
+    max-width: 800px;
+    left: -100px;
+    z-index: 0;
+    position: relative;
+    border-radius: 200px;
+    box-shadow: 0 25px 50px -10px rgba(green, 0.4);
+    height: 608px;
+    margin-bottom: -200px;
+
+    @include media-breakpoint-down(md) {
+      left: 0;
+    }
+
+    img {
+      position: absolute;
+      border-radius: 200px;
+      opacity: 0;
+      transition: 4s opacity ease;
+      background: white;
+
+      &.active {
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+}
