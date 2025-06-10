@@ -1,6 +1,19 @@
 import React from "react";
 
 const About = () => {
+
+  const services = [
+    "Residential Cleaning",
+    "Office & Commercial Spaces",
+    "Carpet & Upholstery",
+    "Window & Glass Cleaning",
+    "Move-In / Move-Out Cleaning",
+    "Post-Construction Cleanup",
+    "Eco-Friendly Products",
+    "Trained & Certified Staff",
+    "Flexible Scheduling",
+    "Affordable Packages",
+  ];
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
@@ -44,53 +57,21 @@ const About = () => {
           </p>
 
           <ul className="grid grid-cols-2 gap-2 text-gray-700 mb-6 list-inside justify-items-start">
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Residential Cleaning
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Office & Commercial Spaces
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Carpet & Upholstery
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Window & Glass Cleaning
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Move-In / Move-Out Cleaning
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Post-Construction Cleanup
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Eco-Friendly Products
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Trained & Certified Staff
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Flexible Scheduling
-            </li>
-            <li className="flex items-start">
-              <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
-              Affordable Packages
-            </li>
+            {services.map((service, index) => (
+              <li key={index} className="flex items-start">
+                <i className="fa-solid fa-broom text-blue-600 mr-2 mt-1"></i>
+                {service}
+              </li>
+            ))}
           </ul>
 
           <a
-            href="#"
+            href="https://wa.me/918089982218?text=Hello%20ClearGo%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
-            Book a Cleaning
+            <i className="fab fa-whatsapp mr-2"></i> Book a Cleaning
           </a>
         </div>
       </div>

@@ -3,23 +3,33 @@ import "./services.scss";
 
 const services = [
   {
-    title: "Home Cleaning",
-    desc: "Thorough cleaning for bedrooms, kitchens, bathrooms & more.",
+    title: "Residential Cleaning",
+    desc: "Professional cleaning services for your entire home, tailored to your needs.",
     url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
   },
   {
-    title: "Office Cleaning",
-    desc: "Keep your workplace spotless and productive.",
+    title: "Office & Commercial Spaces",
+    desc: "Maintain a spotless and productive environment in your office or commercial space.",
     url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
   },
   {
-    title: "Move-In/Move-Out",
-    desc: "Ensure a clean start or a fresh exit from any space.",
+    title: "Carpet & Upholstery",
+    desc: "Deep cleaning and stain removal for carpets and upholstered furniture.",
     url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
   },
   {
-    title: "Disinfection",
-    desc: "Sanitize your home or office for maximum hygiene.",
+    title: "Window & Glass Cleaning",
+    desc: "Crystal-clear window and glass cleaning services for residential and commercial spaces.",
+    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+  },
+  {
+    title: "Move-In / Move-Out Cleaning",
+    desc: "Detailed cleaning to prepare your space for new occupants or fresh beginnings.",
+    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+  },
+  {
+    title: "Post-Construction Cleanup",
+    desc: "Comprehensive cleaning services after construction or renovation projects.",
     url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
   },
 ];
@@ -37,8 +47,9 @@ const Services = () => {
           </div>
           <div className="flex gap-5">
             <div className="md:col-6 content-center">
-              <img className="rounded-lg h-full" src="https://img-cdn.publive.online/fit-in/1200x675/local-samosal/media/media_files/OuTGQtFoAbp2DCD9sfPe.png" alt="" />
+              <img src="/assets/images/ads.jpg" alt="ads" className="rounded-lg h-100" />
             </div>
+
             <div className="md:col-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
                 {services.map((service, index) => (
@@ -47,7 +58,7 @@ const Services = () => {
                     className=" flex border rounded-lg overflow-hidden  hover:shadow-lg transition bg-gray-200"
                   >
                     <div
-                      className="h-48 bg-gray-200 bg-cover bg-center w-1/2 rounded-lg m-4"
+                      className="h-48 bg-gray-200 bg-cover bg-center w-full rounded-lg m-4"
                       style={{
                         backgroundImage: `url('${service.url || "https://via.placeholder.com/400x300"
                           }')`,

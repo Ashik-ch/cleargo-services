@@ -1,93 +1,137 @@
-import React from "react";
-import "./header.scss";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="bg-blue-700 text-blue-700">
-      <div className="site-mobile-menu site-navbar-target">
-        <div className="site-mobile-menu-header">
-          <div className="site-mobile-menu-close">
-            <span className="icofont-close js-menu-toggle"></span>
-          </div>
-        </div>
-        <div className="site-mobile-menu-body"></div>
-      </div>
-      <nav className="site-nav">
-        <div className="container">
-          <div className="site-navigation">
-            <a href="index.html" className="logo m-0">
-              Tour <span className="text-primary">.</span>
-            </a>
+    <header className="bg-white text-sky-700 shadow-md w-full z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="/" className="text-2xl font-bold">
+          ClearGo Services<span className="text-sky-600">.</span>
+        </a>
+        <nav className="hidden lg:flex space-x-8 items-center">
+          <a href="/" className="hover:text-yellow-400">
+            Home
+          </a>
 
-            <ul className="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-              <li className="active">
-                <a href="index.html">Home</a>
-              </li>
-              <li className="has-children">
-                <a href="#">Dropdown</a>
-                <ul className="dropdown">
-                  <li>
-                    <a href="elements.html">Elements</a>
-                  </li>
-                  <li>
-                    <a href="#">Menu One</a>
-                  </li>
-                  <li className="has-children">
-                    <a href="#">Menu Two</a>
-                    <ul className="dropdown">
-                      <li>
-                        <a href="#">Sub Menu One</a>
-                      </li>
-                      <li>
-                        <a href="#">Sub Menu Two</a>
-                      </li>
-                      <li>
-                        <a href="#">Sub Menu Three</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Menu Three</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="services.html">Services</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact Us</a>
-              </li>
-            </ul>
+          <div className="relative group">
+            <button className="hover:text-yellow-400">Dropdown</button>
+            <div className="absolute left-0 mt-2 w-48 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-20">
+              <a href="/elements" className="block px-4 py-2 hover:bg-gray-100">
+                Elements
+              </a>
+              <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                Menu One
+              </a>
 
-            <a
-              href="#"
-              className="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-            >
-              <span></span>
-            </a>
+              <div className="relative group">
+                <button className="w-full text-left px-4 py-2 hover:bg-gray-100">
+                  Menu Two
+                </button>
+                <div className="absolute left-full top-0 mt-0 w-48 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-20">
+                  <a
+                    href="#"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Sub Menu One
+                  </a>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Sub Menu Two
+                  </a>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Sub Menu Three
+                  </a>
+                </div>
+              </div>
+
+              <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                Menu Three
+              </a>
+            </div>
           </div>
-        </div>
-      </nav>
-      {/* <header classNameName="bg-white shadow p-4 flex justify-between items-center">
-        <h1 classNameName="text-2xl font-bold text-blue-700"> ClearGo Services </h1>
-        <nav classNameName="space-x-4">
-          <a href="#services" classNameName="text-gray-600 hover:text-blue-600">
+
+          <a href="/services" className="hover:text-yellow-400">
             Services
           </a>
-          <a href="#why-us" classNameName="text-gray-600 hover:text-blue-600">
-            Why Us
+          <a href="/about" className="hover:text-yellow-400">
+            About
           </a>
-          <a href="#contact" classNameName="text-gray-600 hover:text-blue-600">
-            Contact
+          <a href="/contact" className="hover:text-yellow-400">
+            Contact Us
           </a>
         </nav>
-      </header> */}
-    </div>
+
+        {/* Mobile menu button */}
+        <button
+          onClick={toggleMobileMenu}
+          className="lg:hidden flex items-center px-3 py-2 border rounded text-sky-700 border-sky-700 hover:text-yellow-400 hover:border-yellow-400"
+        >
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {isMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="lg:hidden bg-sky-700 text-white px-4 pb-4 space-y-2">
+          <a href="/" className="block py-2 hover:text-yellow-400">
+            Home
+          </a>
+          <a href="/elements" className="block py-2 hover:text-yellow-400">
+            Elements
+          </a>
+          <a href="#" className="block py-2 hover:text-yellow-400">
+            Menu One
+          </a>
+          <a href="#" className="block py-2 hover:text-yellow-400">
+            Menu Two
+          </a>
+          <a href="#" className="block py-2 hover:text-yellow-400">
+            Menu Three
+          </a>
+          <a href="/services" className="block py-2 hover:text-yellow-400">
+            Services
+          </a>
+          <a href="/about" className="block py-2 hover:text-yellow-400">
+            About
+          </a>
+          <a href="/contact" className="block py-2 hover:text-yellow-400">
+            Contact Us
+          </a>
+        </div>
+      )}
+    </header>
   );
 };
 
