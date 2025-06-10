@@ -3,19 +3,19 @@ import React from "react";
 const testimonials = [
   {
     name: "Adam Aderson",
-    image: "images/person_2.jpg",
+    image: "https://www.shutterstock.com/image-photo/portrait-young-investor-banker-workplace-260nw-2364566447.jpg",
     quote:
       "There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
   },
   {
     name: "Lukas Devlin",
-    image: "images/person_3.jpg",
+    image: "https://www.shutterstock.com/image-photo/portrait-young-investor-banker-workplace-260nw-2364566447.jpg",
     quote:
       "There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
   },
   {
     name: "Kayla Bryant",
-    image: "images/person_4.jpg",
+    image: "https://www.shutterstock.com/image-photo/portrait-young-investor-banker-workplace-260nw-2364566447.jpg",
     quote:
       "There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
   },

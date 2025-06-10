@@ -32,9 +32,7 @@ const About = () => {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2">
-          <h2 className="text-3xl font-semibold mb-4">
-            See Our Deep Cleaning Service in Action
-          </h2>
+          <h1 className="text-3xl font-semibold mb-4">About Us          </h1>
           <p className="text-gray-600 mb-4">
             Experience spotless homes and offices with our expert deep cleaning
             service. We use eco-friendly products, advanced equipment, and trained
