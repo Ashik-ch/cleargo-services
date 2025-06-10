@@ -6,12 +6,12 @@ const Hero = () => {
     <div className="hero bg-gray-500 py-28 mb-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center">
-          <div className="w-full lg:w-7/12">
+          <div className="w-full lg:w-7/12 text-center">
             <div className="intro-wrap relative z-10">
-              <h1 className="mb-5 text-5xl text-white">
-                <span className="block">Let's Enjoy Your</span> Trip In{" "}
-                <span className="typed-words"></span>
+              <h1 className="mb-2 text-5xl text-white">
+                <span className="block">ClearGo Services</span>
               </h1>
+              <span className="typed-words text-white">Because Clean Matters...<span class="blinking-cursor">|</span></span>
             </div>
           </div>
 

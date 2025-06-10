@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 
 const Contact = () => {
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://www.instagram.com/embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+    }, []);
+
+
+
     return (
         <>
             <header className="bg-gray-900 text-white py-16">
@@ -32,11 +43,26 @@ const Contact = () => {
                 <div className="mt-10">
                     <div className="max-w-6xl mx-auto px-4">
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                            <img
-                                src="https://extension.usu.edu/images/cleaning.png"
-                                alt="Slide 1"
-                                className="rounded-lg w-full object-cover"
-                            />
+
+
+                            <blockquote
+                                className="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/reel/DKe7b-ETsoo/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                data-instgrm-version="14"
+                                style={{
+                                    background: '#FFF',
+                                    border: 0,
+                                    borderRadius: '3px',
+                                    boxShadow:
+                                        '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)',
+                                    margin: '1px',
+                                    maxWidth: '540px',
+                                    minWidth: '326px',
+                                    padding: 0,
+                                    width: 'calc(100% - 2px)',
+                                }}
+                            ></blockquote>
+
                             <img
                                 src="https://extension.usu.edu/images/cleaning.png"
                                 alt="Slide 2"

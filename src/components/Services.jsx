@@ -37,7 +37,7 @@ const Services = () => {
           </div>
           <div className="flex gap-5">
             <div className="md:col-6 content-center">
-              <img className="rounded-lg h-96 " src="https://img-cdn.publive.online/fit-in/1200x675/local-samosal/media/media_files/OuTGQtFoAbp2DCD9sfPe.png" alt="" />
+              <img className="rounded-lg h-full" src="https://img-cdn.publive.online/fit-in/1200x675/local-samosal/media/media_files/OuTGQtFoAbp2DCD9sfPe.png" alt="" />
             </div>
             <div className="md:col-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
