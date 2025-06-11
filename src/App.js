@@ -6,19 +6,28 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Testimonials from './components/Testimonial';
 import Contact from './components/Contact';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Testimonials />
-      <Contact />
+      <Routes>
+        <Route path="/" element={
+          <div>
+            <Hero />
+            <About />
+            <Services />
+            <Testimonials />
+            <Contact />
+          </div>
+        } />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-
-    </div>
+    </Router>
   );
 }
 

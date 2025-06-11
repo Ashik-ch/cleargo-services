@@ -17,55 +17,35 @@ const Header = () => {
           <a href="/" className="hover:text-yellow-400">
             Home
           </a>
-
+          <a href="/about" className="hover:text-yellow-400">
+            About
+          </a>
           <div className="relative group">
-            <button className="hover:text-yellow-400">Dropdown</button>
+            <button className="hover:text-yellow-400"> <a href="/services" className="block py-2 hover:text-yellow-400">
+              Services            </a> </button>
             <div className="absolute left-0 mt-2 w-48 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-20">
-              <a href="/elements" className="block px-4 py-2 hover:bg-gray-100">
-                Elements
+              <a href="/residential" className="block px-4 py-2 hover:bg-gray-100">
+                Residential Cleaning
               </a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                Menu One
-              </a>
-
               <div className="relative group">
                 <button className="w-full text-left px-4 py-2 hover:bg-gray-100">
-                  Menu Two
-                </button>
+                  Office & Commercial Spaces                </button>
                 <div className="absolute left-full top-0 mt-0 w-48 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-20">
                   <a
                     href="#"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    Sub Menu One
+                    Carpet & Upholstery
                   </a>
                   <a
                     href="#"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    Sub Menu Two
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    Sub Menu Three
-                  </a>
+                    Window & Glass Cleaning                  </a>
                 </div>
               </div>
-
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                Menu Three
-              </a>
             </div>
           </div>
-
-          <a href="/services" className="hover:text-yellow-400">
-            Services
-          </a>
-          <a href="/about" className="hover:text-yellow-400">
-            About
-          </a>
           <a href="/contact" className="hover:text-yellow-400">
             Contact Us
           </a>
@@ -119,9 +99,6 @@ const Header = () => {
           </a>
           <a href="#" className="block py-2 hover:text-yellow-400">
             Menu Three
-          </a>
-          <a href="/services" className="block py-2 hover:text-yellow-400">
-            Services
           </a>
           <a href="/about" className="block py-2 hover:text-yellow-400">
             About
