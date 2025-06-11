@@ -19,18 +19,18 @@ const Contact = () => {
                     <div className="mb-4">
                         <span id="clock" className="text-lg font-mono"></span>
                     </div>
-                    <h1 className="text-4xl font-bold mb-4">SEO Training Course</h1>
+                    <h1 className="text-4xl font-bold mb-4 text-white">Popular Works</h1>
                     <p className="max-w-xl mx-auto text-lg mb-6">
-                        Do you feel like you're doing a lot of guesswork when it comes to
-                        SEO for your website? Take the SEO training course to change that.
+                        Do you feel overwhelmed keeping your home or workspace spotless? Let ClearGo Services take care of it for you. Our professional cleaning team ensures every corner shines — so you can relax and enjoy a cleaner, healthier environment.
+
                     </p>
                     <div className="flex justify-center gap-4">
                         <a
-                            href="#register"
+                            href="https://wa.me/918089982218?text=Hello%20ClearGo%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service."
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition"
-                        >
-                            REGISTER
-                        </a>
+                        >            Book                        </a>
                         <a
                             href="#instructor"
                             className="px-6 py-3 border border-white hover:bg-white hover:text-gray-900 rounded-lg transition"
