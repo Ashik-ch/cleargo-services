@@ -37,7 +37,7 @@ const services = [
 const Services = () => {
   return (
     <section>
-      <div id="services" className="py-16 bg-gray-50 text-center">
+      <div id="services" className="py-16 bg-white text-center">
         <div className="max-w-6xl mx-auto px-4">
           <div className="mb-12 text-center">
             <h1 className="mb-3">Our Services</h1>
@@ -70,37 +70,6 @@ const Services = () => {
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="untree_co-section count-numbers py-5 mt-10 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap mx-4">
-            <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/3 px-4 mb-6">
-              <div className="counter-wrap text-center">
-                <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <h1 data-number="9313">10+</h1>
-                </div>
-                <span className="caption text-gray-700 text-lg">No. of Services</span>
-              </div>
-            </div>
-            <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/3 px-4 mb-6">
-              <div className="counter-wrap text-center">
-                <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <h1 data-number="8492">65+</h1>
-                </div>
-                <span className="caption text-gray-700 text-lg">No. of Clients</span>
-              </div>
-            </div>
-            <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/3 px-4 mb-6">
-              <div className="counter-wrap text-center">
-                <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <h1 data-number="100">200+</h1>
-                </div>
-                <span className="caption text-gray-700 text-lg">No. of Employees</span>
               </div>
             </div>
           </div>

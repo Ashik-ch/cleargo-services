@@ -46,15 +46,6 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                <div style={{ height: '100px' }}>
-                    <img
-                        src="https://www.instagram.com/p/DKdi1r7vBjL/media/?size=l"
-                        alt="Instagram Post"
-                        className="h-full w-full object-cover"
-                    />
-                </div>
-
-
                 {/* Instagram Embed Section */}
                 <div className="mt-12 px-4 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {instagramPosts.map((url, idx) => (
