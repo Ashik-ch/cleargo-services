@@ -6,12 +6,12 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Testimonials from './components/Testimonial';
 import Contact from './components/Contact';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Gallery from './components/Gallery';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/cleargo-services">
       <Header />
       <Routes>
         <Route path="/" element={
