@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./hero.scss";
 
+const images = [
+  "/assets/images/hero1.jpg",
+  "/assets/images/glassgo.jpg",
+  "/assets/images/hero1.jpg",
+  "/assets/images/glassgo.jpg",
+  "/assets/images/hero1.jpg",
+  "/assets/images/glassgo.jpg",
+];
+
+
 const Hero = () => {
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 1000); // change every 1 second
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div className="hero bg-gray-500 py-28 mb-24">
       <div className="container mx-auto px-4">
@@ -17,16 +38,15 @@ const Hero = () => {
 
           <div className="w-full lg:w-5/12">
             <div className="slides relative mx-auto max-w-xl h-[608px] rounded-full overflow-hidden shadow-2xl">
-              <img src="/assets/images/hero1.jpg" alt="header1"
-                className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
-              <img src="/assets/images/hero1.jpg" alt="header2"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
-              <img src="/assets/images/hero1.jpg"
-                alt="header3" className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
-              <img src="/assets/images/hero1.jpg" alt="header4"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
-              <img src="/assets/images/hero1.jpg" alt="header5"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+              {images.map((src, index) => (
+                <img
+                  key={index}
+                  src={src}
+                  alt={`header${index + 1}`}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-100 ${current === index ? "opacity-100" : "opacity-0"
+                    }`}
+                />
+              ))}
             </div>
           </div>
         </div>
