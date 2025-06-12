@@ -27,7 +27,15 @@ const Header = () => {
               <a href="/residential" className="block px-4 py-2 hover:bg-gray-100">
                 Residential Cleaning
               </a>
-              <div className="relative group">
+              <a href="/residential" className="block px-4 py-2 hover:bg-gray-100">
+                Window & Glass Cleaning              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 hover:bg-gray-100"
+              >
+                Carpet & Upholstery
+              </a>
+              {/* <div className="relative group">
                 <button className="w-full text-left px-4 py-2 hover:bg-gray-100">
                   Office & Commercial Spaces                </button>
                 <div className="absolute left-full top-0 mt-0 w-48 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-20">
@@ -41,9 +49,9 @@ const Header = () => {
                     href="#"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    Window & Glass Cleaning                  </a>
+                  </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <a href="/contact" className="hover:text-yellow-400">

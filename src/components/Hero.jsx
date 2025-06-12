@@ -17,31 +17,16 @@ const Hero = () => {
 
           <div className="w-full lg:w-5/12">
             <div className="slides relative mx-auto max-w-xl h-[608px] rounded-full overflow-hidden shadow-2xl">
-              <img
-                src="https://busybucket.in/wp-content/uploads/2022/06/deep-home-cleaning-1.jpg"
-                alt="header1"
-                className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
-              />
-              <img
-                src="https://busybucket.in/wp-content/uploads/2022/06/deep-home-cleaning-1.jpg"
-                alt="header2"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
-              />
-              <img
-                src="https://busybucket.in/wp-content/uploads/2022/06/deep-home-cleaning-1.jpg"
-                alt="header3"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
-              />
-              <img
-                src="https://busybucket.in/wp-content/uploads/2022/06/deep-home-cleaning-1.jpg"
-                alt="header4"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
-              />
-              <img
-                src="https://img-cdn.publive.online/fit-in/1200x675/local-samosal/media/media_files/OuTGQtFoAbp2DCD9sfPe.png"
-                alt="header5"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
-              />
+              <img src="/assets/images/hero1.jpg" alt="header1"
+                className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
+              <img src="/assets/images/hero1.jpg" alt="header2"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+              <img src="/assets/images/hero1.jpg"
+                alt="header3" className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+              <img src="/assets/images/hero1.jpg" alt="header4"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+              <img src="/assets/images/hero1.jpg" alt="header5"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
             </div>
           </div>
         </div>

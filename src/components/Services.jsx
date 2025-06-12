@@ -5,32 +5,33 @@ const services = [
   {
     title: "Residential Cleaning",
     desc: "Professional cleaning services for your entire home, tailored to your needs.",
-    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+    url: "/assets/images/residential.jpg"
+
   },
   {
     title: "Office & Commercial Spaces",
     desc: "Maintain a spotless and productive environment in your office or commercial space.",
-    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+    url: "/assets/images/commercial.jpg"
   },
   {
     title: "Carpet & Upholstery",
     desc: "Deep cleaning and stain removal for carpets and upholstered furniture.",
-    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+    url: "/assets/images/upholstery.jpg"
   },
   {
     title: "Window & Glass Cleaning",
     desc: "Crystal-clear window and glass cleaning services for residential and commercial spaces.",
-    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+    url: "/assets/images/glass.jpg"
   },
   {
     title: "Move-In / Move-Out Cleaning",
     desc: "Detailed cleaning to prepare your space for new occupants or fresh beginnings.",
-    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+    url: "/assets/images/move-in.jpg"
   },
   {
     title: "Post-Construction Cleanup",
     desc: "Comprehensive cleaning services after construction or renovation projects.",
-    url: "https://mycleannshine.com.au/wp-content/uploads/2025/02/Carpet-Steam-Cleaning.jpg",
+    url: "/assets/images/postconstruction.jpg"
   },
 ];
 
@@ -58,7 +59,7 @@ const Services = () => {
                     className=" flex border rounded-lg overflow-hidden  hover:shadow-lg transition bg-gray-200"
                   >
                     <div
-                      className="h-48 bg-gray-200 bg-cover bg-center w-full rounded-lg m-4"
+                      className="h-48 bg-gray-200 bg-cover bg-center w-full rounded-lg m-2"
                       style={{
                         backgroundImage: `url('${service.url || "https://via.placeholder.com/400x300"
                           }')`,
