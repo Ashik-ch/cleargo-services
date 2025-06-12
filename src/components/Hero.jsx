@@ -4,10 +4,7 @@ import "./hero.scss";
 const images = [
   "/assets/images/hero1.jpg",
   "/assets/images/glassgo.jpg",
-  "/assets/images/hero1.jpg",
-  "/assets/images/glassgo.jpg",
-  "/assets/images/hero1.jpg",
-  "/assets/images/glassgo.jpg",
+  "/assets/images/upholsterygo.jpg",
 ];
 
 

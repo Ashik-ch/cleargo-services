@@ -58,8 +58,8 @@
     img {
       position: absolute;
       border-radius: 200px;
-      opacity: 100;
-      transition: 4s opacity ease;
+
+      transition: 2s opacity ease;
       background: #ffffff;
 
       &.active {

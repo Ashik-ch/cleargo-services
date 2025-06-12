@@ -7,6 +7,7 @@ import About from './components/About';
 import Testimonials from './components/Testimonial';
 import Contact from './components/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <About />
             <Services />
             <Testimonials />
+            <Gallery />
             <Contact />
           </div>
         } />
