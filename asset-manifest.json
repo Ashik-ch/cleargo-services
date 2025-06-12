@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cleargo-services/static/css/main.325e4234.css",
+    "main.js": "/cleargo-services/static/js/main.1c8dc037.js",
+    "static/js/453.bc8a8237.chunk.js": "/cleargo-services/static/js/453.bc8a8237.chunk.js",
+    "index.html": "/cleargo-services/index.html",
+    "main.325e4234.css.map": "/cleargo-services/static/css/main.325e4234.css.map",
+    "main.1c8dc037.js.map": "/cleargo-services/static/js/main.1c8dc037.js.map",
+    "453.bc8a8237.chunk.js.map": "/cleargo-services/static/js/453.bc8a8237.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.325e4234.css",
+    "static/js/main.1c8dc037.js"
+  ]
+}
