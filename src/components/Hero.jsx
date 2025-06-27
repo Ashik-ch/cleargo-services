@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./hero.scss";
 
 const images = [
-  "/assets/images/hero1.jpg",
-  "/assets/images/glassgo.jpg",
-  "/assets/images/upholsterygo.jpg",
+  "/assets/images/hero4.jpg",
+  "/assets/images/hero5.jpg",
+  "/assets/images/hero6.jpg",
 ];
 
 
@@ -21,15 +21,20 @@ const Hero = () => {
 
 
   return (
-    <div className="hero bg-gray-500 py-28 mb-24">
+    <div className="hero bg-gray-500 py-28 mb-24"
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/vacuum-cleaner-tackling-heavily-soiled-floor.jpg)`,
+      }}    >
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap items-center">
+        <div className="flex flex-wrap">
           <div className="w-full lg:w-7/12 text-center">
             <div className="intro-wrap relative z-10">
-              <h1 className="mb-2 text-5xl text-white">
-                <span className="block">ClearGo Services</span>
+              <h1 className="mb-2 text-9xl">
+                <div className="block font-bold text-9xl text-white">ClearGo </div>
+                <div className="block font-bold  text-7xl tracking-[.32em] text-sky-100">  Services</div>
+
               </h1>
-              <span className="typed-words text-white">Because Clean Matters...<span class="blinking-cursor">|</span></span>
+              <span className="typed-words font-semibold text-yellow-300">Because Clean Matters...<span class="blinking-cursor">|</span></span>
             </div>
           </div>
 
