@@ -25,7 +25,7 @@ const About = () => {
             className="group relative block"
           >
             <img
-              src="https://extension.usu.edu/images/cleaning.png"
+              src={`${process.env.PUBLIC_URL}/assets/images/commercial.jpg`}
               alt="Deep Cleaning Video"
               className="rounded-2xl shadow-lg"
             />
@@ -45,7 +45,7 @@ const About = () => {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-3xl font-semibold mb-4">About Us          </h1>
+          <h1 className="text-3xl font-semibold mb-4">About Us</h1>
           <p className="text-gray-600 mb-4">
             Experience spotless homes and offices with our expert deep cleaning
             service. We use eco-friendly products, advanced equipment, and trained
@@ -71,7 +71,7 @@ const About = () => {
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
-            <i className="fab fa-whatsapp mr-2"></i> Book a Cleaning
+            <i className="fab fa-whatsapp mr-2"></i> Book your Slot
           </a>
         </div>
       </div>

@@ -38,11 +38,10 @@ const Hero = () => {
               {images.map((src, index) => (
                 <img
                   key={index}
-                  src={src}
+                  src={`${process.env.PUBLIC_URL}${src}`}
                   alt={`header${index + 1}`}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-100 ${current === index ? "opacity-100" : "opacity-0"
-                    }`}
-                />
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-10
+                    }`} />
               ))}
             </div>
           </div>
