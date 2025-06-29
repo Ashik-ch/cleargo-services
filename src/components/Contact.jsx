@@ -8,7 +8,7 @@ const Contact = () => {
 
 
             {/* Register Section */}
-            <section id="register" className="py-16 bg-gray-100">
+            <section id="register" className="py-16 bg-sky-800 text-white">
                 <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
                     <div>
                         <h2 className="text-3xl font-semibold mb-4">Register for a Service</h2>
@@ -16,7 +16,7 @@ const Contact = () => {
                             It's easy to book a cleaning — just fill out the form and click submit.
                             Our team will get back to you promptly!
                         </p>
-                        <ul className="space-y-3 text-gray-700">
+                        <ul className="space-y-3 text-gray-100">
                             <li><strong>Quick response</strong> and flexible scheduling</li>
                             <li><strong>Your data</strong> is secure with us</li>
                             <li><strong>You will receive</strong> confirmation via call or WhatsApp</li>
@@ -24,10 +24,10 @@ const Contact = () => {
                     </div>
 
                     {/* Form */}
-                    <div className="bg-white p-6 rounded-lg shadow">
+                    <div className="bg-white p-6 rounded-lg shadow text-sky-800">
                         <form className="space-y-4">
                             <div>
-                                <label className="block text-sm font-medium mb-1">Name</label>
+                                <label className="block text-sm font-medium mb-1 text-sky-800">Name</label>
                                 <input
                                     type="text"
                                     className="w-full border rounded px-3 py-2"

@@ -19,14 +19,15 @@ function App() {
             <About />
             <Services />
             <Testimonials />
-            <Gallery />
-            <Contact />
           </div>
         } />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/residential" element={<Services />} />
+        <Route path="/window-cleaning" element={<Services />} />
+        <Route path="/carpet-upholstery" element={<Services />} />
       </Routes>
+      <Contact />
       <Footer />
     </Router>
   );

@@ -4,20 +4,17 @@ const testimonials = [
   {
     name: "Tea Days",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-1EwOK_Y2Aj8YyFuYpHJiHq4uG7arWuxLw&s",
-    quote:
-      "There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    quote: "ClearGo Services left our space spotless! Truly professional and reliable.",
   },
   {
     name: "Ganesh",
     image: "https://img.freepik.com/premium-psd/designer-man-3d-icon-avatar-people_431668-1343.jpg",
-    quote:
-      "There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    quote: "I was amazed by how clean everything looked. Highly recommend ClearGo!",
   },
   {
     name: "Parveen",
     image: "https://img.freepik.com/premium-psd/asian-woman-3d-icon-avatar-people_431668-1234.jpg",
-    quote:
-      "There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    quote: "Exceptional attention to detail. Our home has never felt so fresh!",
   },
 ];
 
