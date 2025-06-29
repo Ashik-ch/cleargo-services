@@ -15,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 1000); // change every 1 second
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -45,8 +45,9 @@ const Hero = () => {
                   key={index}
                   src={`${process.env.PUBLIC_URL}${src}`}
                   alt={`header${index + 1}`}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-10
-                    }`} />
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === current ? "opacity-100 z-10" : "opacity-0 z-0"
+                    }`}
+                />
               ))}
             </div>
           </div>
