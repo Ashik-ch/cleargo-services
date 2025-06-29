@@ -46,27 +46,30 @@ const Services = () => {
               We provide professional cleaning solutions to make your spaces shine. From deep cleaning, home and office cleaning, sofa and upholstery care, to water tank and interlock cleaning — ClearGo Services ensures every corner is spotless and hygienic. Serving Kozhikode and Northern Kerala with trusted quality.
             </p>
           </div>
-          <div className="flex gap-5">
-            <div className="md:col-6 content-center">
-              <img src={`${process.env.PUBLIC_URL}/assets/images/ads.jpg`} alt="ads" className="rounded-lg h-100"
+          <div className="flex flex-col lg:flex-row gap-6 items-center lg:items-start">
+            <div className="w-full lg:w-1/2">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/ads.jpg`}
+                alt="ads"
+                className="rounded-lg w-full object-cover"
               />
             </div>
-            <div className="md:col-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="w-full lg:w-1/2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {services.map((service, index) => (
                   <div
                     key={index}
-                    className="flex border rounded-lg overflow-hidden hover:shadow-lg transition bg-gray-200"
+                    className="flex flex-col bg-gray-200 border rounded-lg overflow-hidden hover:shadow-lg transition"
                   >
                     <div
-                      className="h-48 bg-gray-200 bg-cover bg-center w-full rounded-lg m-2"
+                      className="h-48 bg-cover bg-center rounded-lg"
                       style={{
                         backgroundImage: `url(${process.env.PUBLIC_URL + service.url})`,
                       }}
                     ></div>
-                    <div className="p-2 text-left">
-                      <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                      <p className="text-gray-600">{service.desc}</p>
+                    <div className="p-4 text-left">
+                      <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+                      <p className="text-gray-600 text-sm">{service.desc}</p>
                     </div>
                   </div>
                 ))}

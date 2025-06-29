@@ -64,15 +64,16 @@ const About = () => {
               </li>
             ))}
           </ul>
-
-          <a
-            href="https://wa.me/918089982218?text=Hello%20ClearGo%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
-          >
-            <i className="fab fa-whatsapp mr-2"></i> Book your Slot
-          </a>
+          <div className="flex justify-center md:justify-start">
+            <a
+              href="https://wa.me/918089982218?text=Hello%20ClearGo%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+            >
+              <i className="fab fa-whatsapp mr-2"></i> Book your Slot
+            </a>
+          </div>
         </div>
       </div>
       <div className="untree_co-section count-numbers py-5 mt-10 bg-gray-50">
