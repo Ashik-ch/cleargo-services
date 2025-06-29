@@ -19,7 +19,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 bg-white">
         <div className="w-full lg:w-1/2 relative">
           <a
-            href="https://www.youtube.com/watch?v=mwtbEGNABWU"
+            href="https://youtu.be/oySJFZjTFh8?si=89uVlpJNqh7326IQ"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative block"
