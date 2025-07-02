@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <Router basename="/cleargo-services">
+    <Router basename={process.env.REACT_APP_BASENAME || "/"}>
       <Header />
       <Routes>
         <Route path="/" element={
