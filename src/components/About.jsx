@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from 'react-countup';
 
 const About = () => {
 
@@ -82,7 +83,11 @@ const About = () => {
             <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/3 px-4 mb-6">
               <div className="counter-wrap text-center">
                 <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <h1 data-number="9313">10+</h1>
+                  <CountUp start={0} end={10} duration={3} suffix="+" enableScrollSpy scrollSpyOnce>
+                    {({ countUpRef }) => (
+                      <span ref={countUpRef} className="text-5xl text-blue-600" />
+                    )}
+                  </CountUp>
                 </div>
                 <span className="caption text-gray-700 text-lg">No. of Services</span>
               </div>
@@ -90,16 +95,22 @@ const About = () => {
             <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/3 px-4 mb-6">
               <div className="counter-wrap text-center">
                 <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <h1 data-number="8492">65+</h1>
-                </div>
+                  <CountUp start={0} end={95} duration={3} suffix="+" enableScrollSpy scrollSpyOnce>
+                    {({ countUpRef }) => (
+                      <span ref={countUpRef} className="text-5xl text-blue-600" />
+                    )}
+                  </CountUp>                </div>
                 <span className="caption text-gray-700 text-lg">No. of Clients</span>
               </div>
             </div>
             <div className="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/3 px-4 mb-6">
               <div className="counter-wrap text-center">
                 <div className="counter text-5xl font-bold text-blue-600 mb-2">
-                  <h1 data-number="100">200+</h1>
-                </div>
+                  <CountUp start={0} end={50} duration={3} suffix="+" enableScrollSpy scrollSpyOnce>
+                    {({ countUpRef }) => (
+                      <span ref={countUpRef} className="text-5xl text-blue-600" />
+                    )}
+                  </CountUp>                </div>
                 <span className="caption text-gray-700 text-lg">No. of Employees</span>
               </div>
             </div>

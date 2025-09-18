@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <div className="hero bg-gray-500 py-28 mb-24"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/vacuum-cleaner-tackling-heavily-soiled-floor.jpg)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/banner5.png)`,
       }}    >
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
@@ -31,10 +31,10 @@ const Hero = () => {
             <div className="intro-wrap relative z-10">
               <h1 className="mb-2 text-9xl">
                 <div className="block font-bold text-9xl text-white">ClearGo </div>
-                <div className="block font-bold  text-7xl tracking-[.32em] text-sky-100">  Services</div>
+                <div className="block font-bold text-7xl tracking-[.32em] text-white">  Services</div>
 
               </h1>
-              <span className="typed-words font-semibold text-yellow-300">Because Clean Matters...<span class="blinking-cursor">|</span></span>
+              <span className="typed-words font-bold text-yellow-300">Because Clean Matters...<span className="blinking-cursor">|</span></span>
             </div>
           </div>
 
