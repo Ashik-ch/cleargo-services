@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from 'react-countup';
+import { motion } from "framer-motion";
 
 const About = () => {
 
@@ -19,29 +20,11 @@ const About = () => {
     <section className="py-16 ">
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 bg-white">
         <div className="w-full lg:w-1/2 relative">
-          <a
-            href="https://youtu.be/oySJFZjTFh8?si=89uVlpJNqh7326IQ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative block"
-          >
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/commercial.jpg`}
-              alt="Deep Cleaning Video"
-              className="rounded-2xl shadow-lg"
-            />
-            <span className="absolute inset-0 flex items-center justify-center">
-              <span className="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center group-hover:scale-110 transition transform">
-                <svg
-                  className="w-8 h-8 text-blue-600"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M6 4l10 6-10 6V4z" />
-                </svg>
-              </span>
-            </span>
-          </a>
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/ads.jpg`}
+            alt="ads"
+            className="rounded-lg w-full object-cover"
+          />
         </div>
 
         {/* Text Section */}
@@ -66,14 +49,18 @@ const About = () => {
             ))}
           </ul>
           <div className="flex justify-center md:justify-start">
-            <a
+            <motion.a
               href="https://wa.me/918089982218?text=Hello%20ClearGo%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700"
+              initial={{ opacity: 0, x: -25 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }} // animate only once
+              transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1] }}
             >
-              <i className="fab fa-whatsapp mr-2"></i> Book your Slot
-            </a>
+              <i className="fab fa-whatsapp mr-2"></i> Book your Slotss
+            </motion.a>
           </div>
         </div>
       </div>
@@ -117,7 +104,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
 
   );
 };
