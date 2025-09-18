@@ -41,7 +41,7 @@ const Services = () => {
       <div id="services" className="py-16 bg-white text-center">
         <div className="max-w-6xl mx-auto px-4">
           <div className="mb-12 text-center">
-            <h1 className="text-5xl font-bold mb-4 text-blue-700">
+            <h1 className="text-5xl font-bold mb-4 text-sky-800">
               Our Services
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -68,7 +68,7 @@ const Services = () => {
                 <span className="absolute inset-0 flex items-center justify-center">
                   <span className="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center group-hover:scale-110 transition transform">
                     <svg
-                      className="w-8 h-8 text-blue-600"
+                      className="w-8 h-8 text-sky-800"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >

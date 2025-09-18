@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white text-sky-700 shadow-md w-full z-50">
+    <header className="bg-white text-sky-800 shadow-md w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
           ClearGo Services<span className="text-sky-600">.</span>
@@ -21,7 +21,7 @@ const Header = () => {
           </NavLink>
           <div className="relative group">
             <span className="hover:text-yellow-400 cursor-pointer">Services</span>
-            <div className="absolute left-0 mt-2 w-56 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-20">
+            <div className="absolute left-0 mt-2 w-56 bg-white text-sky-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-20">
               <NavLink to="/residential" className="block px-4 py-2 hover:bg-gray-100">
                 Residential Cleaning
               </NavLink>
