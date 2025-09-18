@@ -29,7 +29,7 @@ Phone: ${form.phone}%0A
 
     return (
         <>
-            <section id="register" className="py-16 bg-sky-800 text-white">
+            <section id="register" className="py-16 bg-white text-sky-800">
                 <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
                     <div>
                         <h2 className="text-3xl font-semibold mb-4">Register for a Service</h2>
@@ -37,7 +37,7 @@ Phone: ${form.phone}%0A
                             It's easy to book a cleaning — just fill out the form and click submit.
                             Our team will get back to you promptly!
                         </p>
-                        <ul className="space-y-3 text-gray-100">
+                        <ul className="space-y-3 text-gray-800">
                             <li><strong>Quick response</strong> and flexible scheduling</li>
                             <li><strong>Your data</strong> is secure with us</li>
                             <li><strong>You will receive</strong> confirmation via call or WhatsApp</li>
