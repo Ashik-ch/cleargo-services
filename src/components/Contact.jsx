@@ -29,7 +29,7 @@ Phone: ${form.phone}%0A
 
     return (
         <>
-            <section id="register" className="py-16 bg-white text-sky-800">
+            <section id="register" className="py-16 bg-sky-100 text-sky-800">
                 <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
                     <div>
                         <h2 className="text-3xl font-semibold mb-4">Register for a Service</h2>

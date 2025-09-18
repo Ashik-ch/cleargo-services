@@ -6,6 +6,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonial";
 import Contact from "./components/Contact";
+import CategoryPage from "./components/Category.jsx";
 
 function App() {
   return (
@@ -22,9 +23,9 @@ function App() {
         } />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/residential" element={<Services />} />
-        <Route path="/window-cleaning" element={<Services />} />
-        <Route path="/carpet-upholstery" element={<Services />} />
+        <Route path="/residential" element={<CategoryPage />} />
+        <Route path="/window-cleaning" element={<CategoryPage />} />
+        <Route path="/carpet-upholstery" element={<CategoryPage />} />
       </Routes>
       <Contact />
       <Footer />
