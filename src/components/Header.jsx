@@ -11,7 +11,8 @@ const Header = () => {
   return (
     <header className="bg-white text-sky-800 shadow-md w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">
+        <Link to="/" className="text-2xl font-bold flex items-center">
+          <img src={`${process.env.PUBLIC_URL}/assets/images/cleargo.png`} alt="logo" className="w-12 h-12 object-contain" />
           ClearGo Services<span className="text-sky-600">.</span>
         </Link>
         <nav className="hidden lg:flex space-x-8 items-center">

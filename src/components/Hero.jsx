@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import "./hero.scss";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const images = [
   "/assets/images/hero4.jpg",
@@ -7,55 +7,91 @@ const images = [
   "/assets/images/hero6.jpg",
 ];
 
-
 const Hero = () => {
-
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000);
+    const interval = setInterval(
+      () => setCurrent((prev) => (prev + 1) % images.length),
+      4000
+    );
     return () => clearInterval(interval);
   }, []);
 
-
   return (
-    <div className="hero bg-gray-500 py-28 mb-24"
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/banner5.png)`,
-      }}    >
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap">
-          <div className="w-full lg:w-7/12 text-center">
-            <div className="intro-wrap relative z-10">
-              <h1 className="mb-2 text-9xl">
-                <div className="block font-bold text-9xl text-white">ClearGo </div>
-                <div className="block font-bold text-7xl tracking-[.32em] text-white">  Services</div>
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(${process.env.PUBLIC_URL}/assets/images/banner5.png)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-blue-800/50 via-cyan-700/40 to-teal-600/40"></div>
 
-              </h1>
-              <span className="typed-words font-bold text-yellow-300">Because Clean Matters...<span className="blinking-cursor">|</span></span>
-            </div>
-          </div>
+      <div className="container mx-auto relative z-10 px-6 lg:px-24 flex flex-col lg:flex-row items-center gap-12">
+        {/* Left Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="flex-1 text-center lg:text-center"
+        >
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-teal-400 bg-clip-text text-transparent tracking-[10px]">
+              ClearGo
+            </span>{" "}
+            <span className="block mt-2 text-white drop-shadow-lg tracking-[10px]"> Services </span>
+          </h1>
 
-          <div className="w-full lg:w-5/12">
-            <div className="slides relative mx-auto max-w-xl h-[608px] rounded-full overflow-hidden shadow-2xl">
-              {images.map((src, index) => (
-                <img
-                  key={index}
-                  src={`${process.env.PUBLIC_URL}${src}`}
-                  alt={`header${index + 1}`}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === current ? "opacity-100 z-10" : "opacity-0 z-0"
-                    }`}
-                />
-              ))}
-            </div>
-          </div>
+          <motion.p
+            className="mt-6 text-lg md:text-2xl text-gray-200 font-medium typed-words"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+          >
+            Because <span className="text-yellow-300 font-bold tracking-[6px] typed-words">Clean Matters...<span className="blinking-cursor">|</span></span>
+          </motion.p>
+
+          <motion.div
+            className="mt-8 flex justify-center lg:justify-center gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+          >
+            <a
+              href="#services"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg shadow-lg hover:scale-105 transition-transform"
+            >
+              Explore Services
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 bg-white text-blue-600 rounded-lg shadow-lg hover:scale-105 transition-transform"
+            >
+              Contact Us
+            </a>
+          </motion.div>
+        </motion.div>
+
+        {/* Right Image Slider */}
+        <div className="flex-1 relative max-w-lg h-[550px] w-full rounded-3xl overflow-hidden shadow-2xl">
+          {images.map((src, index) => (
+            <motion.img
+              key={index}
+              src={`${process.env.PUBLIC_URL}${src}`}
+              alt={`slide-${index}`}
+              className={`absolute inset-0 w-full h-full object-cover rounded-3xl transition-opacity duration-1000 ${index === current ? "opacity-100" : "opacity-0"
+                }`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: index === current ? 1 : 0 }}
+              transition={{ duration: 1 }}
+            />
+          ))}
         </div>
       </div>
-    </div>
-
+    </section>
   );
-};
-
+}
 export default Hero;
