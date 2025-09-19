@@ -15,6 +15,10 @@ clearGo-services/
 ├── package.json
 └── README.md
 
+### Build code
+npm run build  // build first
+npm run deploy // then deploy
+
 
 
 ### 🏠 Homepage Features
